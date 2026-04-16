@@ -1,0 +1,553 @@
+{
+  "nodes": [
+    {
+      "id": "claude_code",
+      "label": "Claude Code",
+      "file_type": "tool"
+    },
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "file_type": "company"
+    },
+    {
+      "id": "cli",
+      "label": "CLI Interface",
+      "file_type": "interface"
+    },
+    {
+      "id": "ide_integration",
+      "label": "IDE Integration",
+      "file_type": "feature"
+    },
+    {
+      "id": "agent_mode",
+      "label": "Agent Mode",
+      "file_type": "mode"
+    },
+    {
+      "id": "file_operations",
+      "label": "File Operations",
+      "file_type": "capability"
+    },
+    {
+      "id": "code_analysis",
+      "label": "Code Analysis",
+      "file_type": "capability"
+    },
+    {
+      "id": "git_integration",
+      "label": "Git Integration",
+      "file_type": "feature"
+    },
+    {
+      "id": "context_management",
+      "label": "Context Management",
+      "file_type": "feature"
+    },
+    {
+      "id": "mcp",
+      "label": "MCP Support",
+      "file_type": "protocol"
+    },
+    {
+      "id": "claude_init",
+      "label": "claude init",
+      "file_type": "command"
+    },
+    {
+      "id": "claude_run",
+      "label": "claude run",
+      "file_type": "command"
+    },
+    {
+      "id": "claude_chat",
+      "label": "claude chat",
+      "file_type": "command"
+    },
+    {
+      "id": "claude_config",
+      "label": "claude config",
+      "file_type": "command"
+    },
+    {
+      "id": "claude_tools",
+      "label": "claude tools",
+      "file_type": "command"
+    },
+    {
+      "id": "claude_models",
+      "label": "claude models",
+      "file_type": "command"
+    },
+    {
+      "id": "read_file",
+      "label": "Read File",
+      "file_type": "tool"
+    },
+    {
+      "id": "write_file",
+      "label": "Write File",
+      "file_type": "tool"
+    },
+    {
+      "id": "edit_file",
+      "label": "Edit File",
+      "file_type": "tool"
+    },
+    {
+      "id": "create_file",
+      "label": "Create File",
+      "file_type": "tool"
+    },
+    {
+      "id": "delete_file",
+      "label": "Delete File",
+      "file_type": "tool"
+    },
+    {
+      "id": "search_file",
+      "label": "Search Files",
+      "file_type": "tool"
+    },
+    {
+      "id": "code_generation",
+      "label": "Code Generation",
+      "file_type": "capability"
+    },
+    {
+      "id": "code_review",
+      "label": "Code Review",
+      "file_type": "capability"
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "file_type": "capability"
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "file_type": "capability"
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "file_type": "capability"
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation",
+      "file_type": "capability"
+    },
+    {
+      "id": "git_status",
+      "label": "Git Status",
+      "file_type": "feature"
+    },
+    {
+      "id": "git_commit",
+      "label": "Git Commit",
+      "file_type": "feature"
+    },
+    {
+      "id": "git_branch",
+      "label": "Git Branch",
+      "file_type": "feature"
+    },
+    {
+      "id": "git_diff",
+      "label": "Git Diff",
+      "file_type": "feature"
+    },
+    {
+      "id": "git_merge",
+      "label": "Git Merge",
+      "file_type": "feature"
+    },
+    {
+      "id": "mcp_server",
+      "label": "MCP Server",
+      "file_type": "protocol"
+    },
+    {
+      "id": "mcp_client",
+      "label": "MCP Client",
+      "file_type": "protocol"
+    },
+    {
+      "id": "mcp_tools_list",
+      "label": "MCP Tools List",
+      "file_type": "command"
+    },
+    {
+      "id": "mcp_call",
+      "label": "MCP Tool Call",
+      "file_type": "command"
+    },
+    {
+      "id": "prompt_design",
+      "label": "Prompt Design",
+      "file_type": "practice"
+    },
+    {
+      "id": "context_budget",
+      "label": "Context Budget",
+      "file_type": "practice"
+    },
+    {
+      "id": "approval_gates",
+      "label": "Approval Gates",
+      "file_type": "practice"
+    },
+    {
+      "id": "session_management",
+      "label": "Session Management",
+      "file_type": "practice"
+    },
+    {
+      "id": "error_handling",
+      "label": "Error Handling",
+      "file_type": "practice"
+    },
+    {
+      "id": "model_selection",
+      "label": "Model Selection",
+      "file_type": "config"
+    },
+    {
+      "id": "api_key",
+      "label": "API Key Config",
+      "file_type": "config"
+    },
+    {
+      "id": "permission_mode",
+      "label": "Permission Mode",
+      "file_type": "config"
+    },
+    {
+      "id": "output_format",
+      "label": "Output Format",
+      "file_type": "config"
+    },
+    {
+      "id": "claude_opus",
+      "label": "Claude Opus",
+      "file_type": "model"
+    },
+    {
+      "id": "claude_sonnet",
+      "label": "Claude Sonnet",
+      "file_type": "model"
+    },
+    {
+      "id": "claude_haiku",
+      "label": "Claude Haiku",
+      "file_type": "model"
+    }
+  ],
+  "edges": [
+    {
+      "source": "claude_code",
+      "target": "anthropic",
+      "relation": "developed_by",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "cli",
+      "relation": "interface",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "ide_integration",
+      "relation": "supports",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "agent_mode",
+      "relation": "mode",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "file_operations",
+      "relation": "capability",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "code_analysis",
+      "relation": "capability",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "git_integration",
+      "relation": "feature",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "mcp",
+      "relation": "supports",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cli",
+      "target": "claude_init",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cli",
+      "target": "claude_run",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cli",
+      "target": "claude_chat",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cli",
+      "target": "claude_config",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cli",
+      "target": "claude_tools",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "file_operations",
+      "target": "read_file",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "file_operations",
+      "target": "write_file",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "file_operations",
+      "target": "edit_file",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "file_operations",
+      "target": "create_file",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "file_operations",
+      "target": "search_file",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "code_generation",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "code_review",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "refactoring",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "debugging",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "testing",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "code_analysis",
+      "target": "documentation",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "git_integration",
+      "target": "git_status",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "git_integration",
+      "target": "git_commit",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "git_integration",
+      "target": "git_branch",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "git_integration",
+      "target": "git_diff",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "git_integration",
+      "target": "git_merge",
+      "relation": "includes",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp_server",
+      "relation": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp_client",
+      "relation": "component",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp_tools_list",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp_call",
+      "relation": "command",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "prompt_design",
+      "relation": "requires",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "claude_code",
+      "target": "context_budget",
+      "relation": "manages",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "approval_gates",
+      "relation": "uses",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "session_management",
+      "relation": "supports",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_code",
+      "target": "error_handling",
+      "relation": "requires",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "claude_config",
+      "target": "model_selection",
+      "relation": "sets",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_config",
+      "target": "api_key",
+      "relation": "sets",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_config",
+      "target": "permission_mode",
+      "relation": "sets",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "claude_config",
+      "target": "output_format",
+      "relation": "sets",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "model_selection",
+      "target": "claude_opus",
+      "relation": "option",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "model_selection",
+      "target": "claude_sonnet",
+      "relation": "option",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "model_selection",
+      "target": "claude_haiku",
+      "relation": "option",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "agent_mode",
+      "target": "approval_gates",
+      "relation": "requires",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "agent_mode",
+      "target": "file_operations",
+      "relation": "uses",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "context_budget",
+      "target": "claude_opus",
+      "relation": "optimized_for",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "git_commit",
+      "target": "approval_gates",
+      "relation": "requires",
+      "confidence": "INFERRED"
+    },
+    {
+      "source": "ide_integration",
+      "target": "claude_code",
+      "relation": "enhances",
+      "confidence": "INFERRED"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
